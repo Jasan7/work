@@ -1,8 +1,96 @@
-.dashboard {
+ .container {
+    background-color: var(--background);
+    color: var(--text);
+    min-height: 100vh;
     display: flex;
-    gap: 16px;
-    padding: 16px;
-    overflow-x: auto;  /* Enable horizontal scrolling */
-    white-space: nowrap;  /* Prevent wrapping of columns */
-    flex-wrap: nowrap;    /* Ensure that columns don't wrap when not enough space */
+    flex-direction: column;
   }
+  
+  .topBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    padding: 16px 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--text);
+  }
+  
+  .topBarButtons {
+    display: flex;
+    gap: 12px;
+  }
+  
+  .logoutButton, .addJobButton {
+    background-color: var(--accent);
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s ease;
+  }
+  
+  .logoutButton {
+    background-color: var(--danger);
+  }
+  
+  .logoutButton:hover {
+    background-color: #d32f2f;
+  }
+  
+  .addJobButton:hover {
+    background-color: #388e3c;
+  }
+  
+  /* Modal */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: var(--overlay);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modalContent {
+    border-radius: 12px;
+    max-width: 600px;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+  }
+  
+  .closeModal {
+    position: absolute;
+    top: 52px;
+    right: 16px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: black;
+    cursor: pointer;
+  }
+  
+  /* Job columns */
+  .dashboard {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 24px;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    flex: 1;
+    margin-top: 16px;
+  }
+  

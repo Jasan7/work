@@ -1,17 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Dashboard from './components/Dashboard/Dashboard'
+import React from 'react';
+import { Route, Routes } from 'react-router-dom'; // Import Route and Routes
+import Dashboard from './components/Dashboard/Dashboard';
+import Login from './components/Login/Login';
+import SignUp from './components/SignUp/SignUp';
+import withAuth from './HOC/withAuth';
+import JobDetails from './components/JobDetails/JobDetails';
 
-function App() {
-  const [count, setCount] = useState(0)
 
+const ProtectedDashboard = withAuth(Dashboard);
+
+const App = () => {
   return (
-    <>
-      <Dashboard/>
-    </>
-  )
-}
+    <Routes>
+      <Route path="/signup" element={<SignUp />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/dashboard" element={<ProtectedDashboard />} />
+      <Route path="/job/:id" element={<JobDetails />} />
+    </Routes>
+  );
+};
 
-export default App
+export default App;

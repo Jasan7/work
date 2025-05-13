@@ -1,0 +1,86 @@
+/* Container styles for centering */
+.container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: #121212;
+  }
+  
+  /* Card with padding, shadow, and rounded corners */
+  .card {
+    background: #6e6d6d;
+    padding: 3rem;
+    border-radius: 12px;
+    border: 1px solid white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  /* Title styling */
+  .title {
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    color: #fdfdfd;
+  }
+  
+  /* Form container */
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Input fields */
+  .input {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  /* Signup button */
+  .button {
+    padding: 0.75rem;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  /* Google sign-up button */
+  .googleButton {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    background-color: #db4437;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  /* Divider between buttons */
+  .divider {
+    margin: 1.5rem 0;
+    font-weight: bold;
+    color: #cecece;
+  }
+  
+  /* Footer text for login link */
+  .footer {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: #dddcdc;
+  }
+  
+  /* Styling for the link */
+  .link {
+    color: #8ac1fc;
+    text-decoration: none;
+  }
+  

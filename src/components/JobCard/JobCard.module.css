@@ -1,12 +1,12 @@
 .jobCard {
-  background-color: #fff;
+  background-color: #332f2f;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 16px;
   margin-bottom: 12px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   cursor: grab;
-  transition: transform 0.2s ease; /* Smooth transition when not dragging */
+  transition: transform 0.2s ease; 
 }
 
 .jobCard img {
@@ -22,5 +22,5 @@
 
 .jobCard p {
   font-size: 14px;
-  color: #666;
+  color: #e9e7e7;
 }
