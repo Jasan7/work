@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   GoogleAuthProvider,
   createUserWithEmailAndPassword,
@@ -33,6 +33,17 @@ const Signup = () => {
       alert(error.message);
     }
   };
+
+  useEffect(() => {
+      const unsubscribe = auth.onAuthStateChanged((user) => {
+        if (user) {
+          // User is already logged in, redirect to dashboard
+          navigate('/dashboard', { replace: true });
+        }
+      });
+  
+      return () => unsubscribe();
+    }, [auth, navigate]);
 
   return (
     <div className={styles.container}>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { signInWithEmailAndPassword, GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
 import { useNavigate } from 'react-router-dom';
 import { auth } from '../../Firebase/firebase';
@@ -18,6 +18,17 @@ const Login = () => {
       alert('Login failed: ' + error.message);
     }
   };
+
+  useEffect(() => {
+    const unsubscribe = auth.onAuthStateChanged((user) => {
+      if (user) {
+        // User is already logged in, redirect to dashboard
+        navigate('/dashboard', { replace: true });
+      }
+    });
+
+    return () => unsubscribe();
+  }, [auth, navigate]);
 
   const handleGoogleSignIn = async () => {
     const provider = new GoogleAuthProvider();
