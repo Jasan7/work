@@ -1,0 +1,26 @@
+.jobCard {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: grab;
+  transition: transform 0.2s ease; /* Smooth transition when not dragging */
+}
+
+.jobCard img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.jobCard h3 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.jobCard p {
+  font-size: 14px;
+  color: #666;
+}

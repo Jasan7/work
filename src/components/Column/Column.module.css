@@ -1,0 +1,23 @@
+.column {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 0 8px;
+    flex: 1;
+    width: 250px;
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.2s ease;
+  }
+  
+  .column.isOver {
+    background-color: #e0e0e0; 
+  }
+  
+  .jobsList {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  

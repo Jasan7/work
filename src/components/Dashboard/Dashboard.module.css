@@ -1,0 +1,8 @@
+.dashboard {
+    display: flex;
+    gap: 16px;
+    padding: 16px;
+    overflow-x: auto;  /* Enable horizontal scrolling */
+    white-space: nowrap;  /* Prevent wrapping of columns */
+    flex-wrap: nowrap;    /* Ensure that columns don't wrap when not enough space */
+  }
