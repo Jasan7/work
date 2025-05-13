@@ -44,12 +44,14 @@
   /* Login button */
   .button {
     padding: 0.75rem;
+    width: 100%;
     background-color: #007bff;
     color: #fff;
     font-size: 1rem;
     border: none;
     border-radius: 6px;
     cursor: pointer;
+    margin-left: 10px;
   }
   
   /* Google sign-in button */
