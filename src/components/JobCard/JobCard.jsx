@@ -30,7 +30,7 @@ const JobCard = ({ job }) => {
             className={styles.jobCard}
         >
             {job.logoURL && (
-                <img src={job.logoURL} alt={job.company} />
+                <img src={job.logoURL} alt={job.company} loading='lazy' />
             )}
             <h3>{job.title}</h3>
             <p>{job.company}</p>
