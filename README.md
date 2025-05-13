@@ -1,12 +1,37 @@
-# React + Vite
+# React + Vite + Firebase Job Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a minimal job application tracker built using **React**, **Firebase**, and **Vite**, offering real-time data sync, user authentication, and fast development experience via Vite's HMR.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React** – Frontend UI
+- **Vite** – Fast build tool with HMR
+- **Firebase** – Firestore, Auth, and Hosting (optional)
+- **CSS Modules** – Scoped and modular styling
+- **React Router** – Client-side routing
+- **dnd-kit** – Drag-and-drop functionality
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Features
+
+- 🔐 **Authentication** (Firebase Auth)
+- 📝 **CRUD operations** with **Firestore**
+- 🧱 **Drag and drop** for job cards using `@dnd-kit/core`
+- 📦 **Modular CSS** with `*.module.css`
+- 🔁 **Protected Routes** to restrict access after login
+- 🧭 **Job Details** page with real-time editing
+- 📷 **Lazy-loaded images** for better performance
+
+---
+
+## 🛠️ Setup Instructions
+
+### 1. Clone the repo
+```bash
+git clone https://github.com/Jasan7/work.git
+```
+### 2. Run the project
+```bash
+npm install
+npm run build
